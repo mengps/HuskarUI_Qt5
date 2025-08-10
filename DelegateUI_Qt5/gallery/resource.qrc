@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/Gallery">
-        <file>UpdateLists.json</file>
-    </qresource>
-</RCC>

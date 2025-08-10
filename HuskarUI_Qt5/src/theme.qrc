@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/HuskarUI">
+        <file>theme/HusAutoComplete.json</file>
+        <file>theme/HusBreadcrumb.json</file>
+        <file>theme/HusButton.json</file>
+        <file>theme/HusCaptionButton.json</file>
+        <file>theme/HusCard.json</file>
+        <file>theme/HusCarousel.json</file>
+        <file>theme/HusCheckBox.json</file>
+        <file>theme/HusCollapse.json</file>
+        <file>theme/HusCopyableText.json</file>
+        <file>theme/HusDatePicker.json</file>
+        <file>theme/HusDivider.json</file>
+        <file>theme/HusDrawer.json</file>
+        <file>theme/HusIconText.json</file>
+        <file>theme/HusImage.json</file>
+        <file>theme/HusInput.json</file>
+        <file>theme/HusMenu.json</file>
+        <file>theme/HusMessage.json</file>
+        <file>theme/HusPagination.json</file>
+        <file>theme/HusPopup.json</file>
+        <file>theme/HusProgress.json</file>
+        <file>theme/HusRadio.json</file>
+        <file>theme/HusRate.json</file>
+        <file>theme/HusScrollBar.json</file>
+        <file>theme/HusSelect.json</file>
+        <file>theme/HusSlider.json</file>
+        <file>theme/HusSwitch.json</file>
+        <file>theme/HusTableView.json</file>
+        <file>theme/HusTabView.json</file>
+        <file>theme/HusTag.json</file>
+        <file>theme/HusTimeline.json</file>
+        <file>theme/HusTimePicker.json</file>
+        <file>theme/HusToolTip.json</file>
+        <file>theme/HusTour.json</file>
+        <file>theme/Index.json</file>
+    </qresource>
+</RCC>

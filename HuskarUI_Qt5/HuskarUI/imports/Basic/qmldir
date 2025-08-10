@@ -1,0 +1,58 @@
+module HuskarUI.Basic
+plugin HuskarUIBasic
+classname HuskarUI_BasicPlugin
+designersupported
+typeinfo plugins.qmltypes
+prefer :/HuskarUI/Basic/
+
+HusButton 1.0 imports/HusButton.qml
+HusIconButton 1.0 imports/HusIconButton.qml
+HusCaptionButton 1.0 imports/HusCaptionButton.qml
+HusTourFocus 1.0 imports/HusTourFocus.qml
+HusTourStep 1.0 imports/HusTourStep.qml
+HusIconText 1.0 imports/HusIconText.qml
+HusCopyableText 1.0 imports/HusCopyableText.qml
+HusCaptionBar 1.0 imports/HusCaptionBar.qml
+HusWindow 1.0 imports/HusWindow.qml
+HusMenu 1.0 imports/HusMenu.qml
+HusDivider 1.0 imports/HusDivider.qml
+HusSwitch 1.0 imports/HusSwitch.qml
+HusScrollBar 1.0 imports/HusScrollBar.qml
+HusResizeMouseArea 1.0 imports/HusResizeMouseArea.qml
+HusMoveMouseArea 1.0 imports/HusMoveMouseArea.qml
+HusAcrylic 1.0 imports/HusAcrylic.qml
+HusSlider 1.0 imports/HusSlider.qml
+HusTabView 1.0 imports/HusTabView.qml
+HusToolTip 1.0 imports/HusToolTip.qml
+HusSelect 1.0 imports/HusSelect.qml
+HusInput 1.0 imports/HusInput.qml
+HusOTPInput 1.0 imports/HusOTPInput.qml
+HusRate 1.0 imports/HusRate.qml
+HusRadio 1.0 imports/HusRadio.qml
+HusRadioBlock 1.0 imports/HusRadioBlock.qml
+HusCheckBox 1.0 imports/HusCheckBox.qml
+HusTimePicker 1.0 imports/HusTimePicker.qml
+HusDrawer 1.0 imports/HusDrawer.qml
+HusCollapse 1.0 imports/HusCollapse.qml
+HusAvatar 1.0 imports/HusAvatar.qml
+HusCard 1.0 imports/HusCard.qml
+HusPagination 1.0 imports/HusPagination.qml
+HusPopup 1.0 imports/HusPopup.qml
+HusTimeline 1.0 imports/HusTimeline.qml
+HusTag 1.0 imports/HusTag.qml
+HusTableView 1.0 imports/HusTableView.qml
+HusMessage 1.0 imports/HusMessage.qml
+HusAutoComplete 1.0 imports/HusAutoComplete.qml
+HusText 1.0 imports/HusText.qml
+HusDatePicker 1.0 imports/HusDatePicker.qml
+HusProgress 1.0 imports/HusProgress.qml
+HusBadge 1.0 imports/HusBadge.qml
+HusButtonBlock 1.0 imports/HusButtonBlock.qml
+HusCarousel 1.0 imports/HusCarousel.qml
+HusSwitchEffect 1.0 imports/HusSwitchEffect.qml
+HusContextMenu 1.0 imports/HusContextMenu.qml
+HusBreadcrumb 1.0 imports/HusBreadcrumb.qml
+HusInputNumber 1.0 imports/HusInputNumber.qml
+HusImage 1.0 imports/HusImage.qml
+HusImagePreview 1.0 imports/HusImagePreview.qml
+

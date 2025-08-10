@@ -1,0 +1,57 @@
+module HuskarUI.Basic
+plugin HuskarUIBasic
+classname HuskarUI_BasicPlugin
+designersupported
+typeinfo plugins.qmltypes
+
+HusButton 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusButton.qml
+HusIconButton 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusIconButton.qml
+HusCaptionButton 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusCaptionButton.qml
+HusTourFocus 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusTourFocus.qml
+HusTourStep 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusTourStep.qml
+HusIconText 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusIconText.qml
+HusCopyableText 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusCopyableText.qml
+HusCaptionBar 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusCaptionBar.qml
+HusWindow 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusWindow.qml
+HusMenu 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusMenu.qml
+HusDivider 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusDivider.qml
+HusSwitch 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusSwitch.qml
+HusScrollBar 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusScrollBar.qml
+HusResizeMouseArea 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusResizeMouseArea.qml
+HusMoveMouseArea 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusMoveMouseArea.qml
+HusAcrylic 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusAcrylic.qml
+HusSlider 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusSlider.qml
+HusTabView 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusTabView.qml
+HusToolTip 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusToolTip.qml
+HusSelect 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusSelect.qml
+HusInput 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusInput.qml
+HusOTPInput 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusOTPInput.qml
+HusRate 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusRate.qml
+HusRadio 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusRadio.qml
+HusRadioBlock 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusRadioBlock.qml
+HusCheckBox 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusCheckBox.qml
+HusTimePicker 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusTimePicker.qml
+HusDrawer 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusDrawer.qml
+HusCollapse 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusCollapse.qml
+HusAvatar 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusAvatar.qml
+HusCard 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusCard.qml
+HusPagination 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusPagination.qml
+HusPopup 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusPopup.qml
+HusTimeline 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusTimeline.qml
+HusTag 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusTag.qml
+HusTableView 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusTableView.qml
+HusMessage 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusMessage.qml
+HusAutoComplete 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusAutoComplete.qml
+HusText 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusText.qml
+HusDatePicker 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusDatePicker.qml
+HusProgress 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusProgress.qml
+HusBadge 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusBadge.qml
+HusButtonBlock 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusButtonBlock.qml
+HusCarousel 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusCarousel.qml
+HusSwitchEffect 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusSwitchEffect.qml
+HusContextMenu 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusContextMenu.qml
+HusBreadcrumb 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusBreadcrumb.qml
+HusInputNumber 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusInputNumber.qml
+HusImage 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusImage.qml
+HusImagePreview 1.0 qrc:/HuskarUI/imports/HuskarUI/imports/HusImagePreview.qml
+

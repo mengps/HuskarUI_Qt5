@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/HuskarUI">
+        <file>resources/font/HuskarUI-Icons.ttf</file>
+    </qresource>
+</RCC>

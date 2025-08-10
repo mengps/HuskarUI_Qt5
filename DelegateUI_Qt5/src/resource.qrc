@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/DelegateUI">
-        <file>../resources/font/DelegateUI-Icons.ttf</file>
-    </qresource>
-</RCC>

@@ -1,4 +1,4 @@
-name: CMake on Windows
+name: CMake on Windows MSVC2019 - Qt5.15.2
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
 
     env:
       fileName1: 'CustomControls'
-      fileName2: 'DelegateUI_Qt5'
+      fileName2: 'HuskarUI_Qt5'
 
     steps:
       - name: Checkout repository
@@ -58,18 +58,18 @@ jobs:
           cmake --build . --config ${{ matrix.build_types }} --parallel --target all --
           cmake --build . --config ${{ matrix.build_types }} --parallel --target Script-DeployRelease --
           
-      - name: Build DelegateUI_Qt5
+      - name: Build HuskarUI_Qt5
         id: build2
         shell: cmd
         run: |
           call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" ${{ matrix.msvc_arch }}
-          cmake -B ${{ github.workspace }}\DelegateUI_Qt5\build -S ${{ github.workspace }}\DelegateUI_Qt5 ^
+          cmake -B ${{ github.workspace }}\HuskarUI_Qt5\build -S ${{ github.workspace }}\HuskarUI_Qt5 ^
             -DCMAKE_MESSAGE_LOG_LEVEL=STATUS ^
             -DCMAKE_C_COMPILER=${{ matrix.c_compiler }} ^
             -DCMAKE_CXX_COMPILER=${{ matrix.cxx_compiler }} ^
             -DCMAKE_BUILD_TYPE=${{ matrix.build_types }} ^
             -GNinja
-          cd ${{ github.workspace }}\DelegateUI_Qt5\build
+          cd ${{ github.workspace }}\HuskarUI_Qt5\build
           cmake --build . --config ${{ matrix.build_types }} --parallel --target all --
 
           echo winSdkDir=%WindowsSdkDir% >> %GITHUB_ENV%
@@ -115,14 +115,14 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true 
   
-      - name: Package DelegateUI_Qt5
+      - name: Package HuskarUI_Qt5
         id: package2
         env:
           archiveName: ${{ env.fileName2 }}-${{ matrix.qt_arch }}-${{ matrix.qt_ver }}
           msvcArch: ${{ matrix.msvc_arch }}          
         shell: pwsh
         run: |
-          cd .\DelegateUI_Qt5
+          cd .\HuskarUI_Qt5
           # 创建文件夹
           New-Item -ItemType Directory dist
           # 拷贝生成文件
@@ -143,8 +143,8 @@ jobs:
           # 拷贝vcRedist dll
           $redistDll="{0}{1}\*.CRT\*.dll" -f $env:vcToolsRedistDir.Trim(),$env:msvcArch
           Copy-Item $redistDll dist\
-          # 拷贝 DelegateUI.dll
-          Copy-Item dist\DelegateUI\DelegateUI.dll dist\
+          # 拷贝 HuskarUIBasic.dll
+          Copy-Item dist\HuskarUI\Basic\HuskarUIBasic.dll dist\
           # 拷贝WinSDK dll
           $sdkDll="{0}Redist\{1}ucrt\DLLs\{2}\*.dll" -f $env:winSdkDir.Trim(),$env:winSdkVer.Trim(),$env:msvcArch
           Copy-Item $sdkDll dist\
@@ -154,18 +154,18 @@ jobs:
           $name = ${env:archiveName}
           echo "packageName=$name" >> $env:GITHUB_OUTPUT
         
-      - name: Upload DelegateUI_Qt5 Artifact
+      - name: Upload HuskarUI_Qt5 Artifact
         uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.package2.outputs.packageName }}
-          path: DelegateUI_Qt5\dist
+          path: HuskarUI_Qt5\dist
   
-      - name: Upload DelegateUI_Qt5 Release
+      - name: Upload HuskarUI_Qt5 Release
         if: startsWith(github.event.ref, 'refs/tags/')
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: DelegateUI_Qt5\${{ steps.package2.outputs.packageName }}.zip
+          file: HuskarUI_Qt5\${{ steps.package2.outputs.packageName }}.zip
           asset_name: ${{ env.fileName2 }}_${{  github.ref_name }}_${{ matrix.os }}_Qt${{ matrix.qt_ver }}.zip
           tag: ${{ github.ref }}
           overwrite: true 

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/HuskarUI">
+        <file>shaders/husrate.frag</file>
+        <file>shaders/hustour.frag</file>
+    </qresource>
+</RCC>

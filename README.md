@@ -1,27 +1,35 @@
 <div align=center>
-<img width=64 src="./CustomControls/common/delegateui_icon.svg">
+<img width=64 src="./HuskarUI_Qt5/resources/huskarui_icon.svg">
 
-# 「 DelegateUI 」 基于 Qml 的现代 UI
+# 「 HuskarUI 」 基于 Qml 的现代 UI
 
 Qt Qml 的 Ant 设计组件库
 
-**此项目为「 DelegateUI 」Qt5 实现**
+**此项目为「 HuskarUI 」Qt5 实现**
 
-**Qt6 实现更加强大性能也更好 [DelegateUI for Qt6](https://github.com/mengps/DelegateUI)**
+**Qt6 实现更加强大性能也更好 [HuskarUI for Qt6](https://github.com/mengps/HuskarUI)**
 
 </div>
 
 <div align=center>
 
-![win-badge] [![QQGroup][qqgroup-image]][qqgroup-url]
+![win-badge] ![linux-badge] ![macos-badge] ![android-badge] [![Issues][issues-image]][issues-url] [![QQGroup][qqgroup-image]][qqgroup-url]
 
-[English](./README.md) | 中文
+English | [中文](./README-zh_CN.md)
 
 </div>
 
 [win-badge]: https://img.shields.io/badge/Windows-passing-brightgreen?style=flat-square
+[linux-badge]: https://img.shields.io/badge/Linux-passing-brightgreen?style=flat-square
+[macos-badge]: https://img.shields.io/badge/MacOS-passing-brightgreen?style=flat-square
+[android-badge]: https://img.shields.io/badge/Android-passing-brightgreen?style=flat-square
+
+[issues-image]: https://flat.badgen.net/github/label-issues/mengps/HuskarUI/open
+[issues-url]: https://github.com/mengps/HuskarUI/issues
+
 [qqgroup-image]: https://img.shields.io/badge/QQGroup-490328047-f74658?style=flat-square
 [qqgroup-url]: https://qm.qq.com/q/cMNHn2tWeY
+
 
 ## 说明
 
@@ -46,13 +54,14 @@ Qt Qml 的 Ant 设计组件库
 > 如需单独构建，直接进入目录构建 `CustomControls/*.pro` 
 
 
-### 对于 `DelegateUI_Qt5` 模块
+### 对于 `HuskarUI_Qt5` 模块
 
-> 请参照 [DelegateUI Qt6](https://github.com/mengps/DelegateUI) 构建
+> 请参照 [HuskarUI Qt6](https://github.com/mengps/HuskarUI) 构建
 
 ## 🗺️ 路线图
 
-开发计划可以在这里看到: [组件路线图](https://github.com/mengps/DelegateUI/discussions/5).
+开发计划可以在这里看到: [组件路线图](https://github.com/mengps/HuskarUI_Qt5/discussions/10).
+
 
 任何人都可以通过 issue/qq群/wx群 进行讨论, 最终有意义的组件/功能将添加到开发计划.
 
@@ -77,44 +86,44 @@ Qt Qml 的 Ant 设计组件库
  Notification | 悬浮出现在(全局/局部)页面上的通知提醒消息 | `Qt5` | <div align=center><img src="./demonstrate/Notification.gif" width="240" height="180" /></div>
  WaveProgress | 动态的水波进度条 | `Qt5` | <div align=center><img src="./demonstrate/WaveProgress.gif" width="240" height="200" /></div>
 
-### 以下控件来自 [DelegateUI](https://github.com/mengps/DelegateUI)
-### 需要该部分控件文档请构建 [DelegateUI_Qt5 Gallery](./DelegateUI_Qt5)
+### 以下控件来自 [HuskarUI](https://github.com/mengps/HuskarUI)
+### 需要该部分控件文档请构建 [HuskarUI_Qt5 Gallery](./HuskarUI_Qt5)
 
  名称 | 说明 | 支持 | 示例
  ---------|----------|---------|--------- 
- DelMoveMouseArea / DelResizeMouseArea | 给任意目标添加[移动/调整大小操作]的鼠标区域 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelResizeMouseArea.gif" width="260" height="190" /></div>
- DelAsyncHasher | 可对任意数据(url/text/object)生成加密哈希的异步散列器 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelAsyncHasher.png" width="150" height="180" /></div>
- DelRate | 对某个事物进行评级 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelRate.png" width="240" height="200" /></div>
- DelSystemThemeHelper | (Qt5/Qt6) 系统主题助手 `[Dark/Light]主题检测 & 感知` | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelSystemThemeHelper.png" width="240" height="110" /></div>
- DelWatermark | 可给页面的任意项加上水印 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelWatermark.png" width="250" height="140" /></div>
- DelTour(DelTourFocus/DelTourStep) | 用于分步引导用户了解产品功能的气泡组件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelTour.png" width="250" height="210" /></div>
- DelButton(DelButton/DelIconButton) | 按钮用于开始一个即时操作。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelButton.png" width="250" height="210" /></div>
- DelDivider | 用于区隔内容的分割线。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelDivider.png" width="250" height="210" /></div>
- DelSwitch | 使用开关在两种状态之间切换。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelSwitch.png" width="250" height="210" /></div>
- DelAcrylic | 亚克力/毛玻璃效果。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelAcrylic.png" width="250" height="210" /></div>
- DelRectangle | 任意角都可以是圆角的矩形。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelRoundRectangle.gif" width="250" height="210" /></div>
- DelTabView | 通过选项卡标签切换内容的组件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelTabView.png" width="250" height="210" /></div>
- DelRadio | 用于在多个备选项中选中单个状态。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelRadio.png" width="250" height="200" /></div>
- DelRadioBlock | DelRadio 变体，用于在多个备选项中选中单个状态。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelRadioBlock.png" width="250" height="200" /></div>
- DelCheckBox | 收集用户的多项选择。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelCheckBox.png" width="250" height="200" /></div>
- DelInput | 通过鼠标或键盘输入内容，是最基础的表单域的包装(即传统输入框)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelInput.png" width="250" height="200" /></div>
- DelOTPInput | 用于接收和验证一次性口令的输入框组合，通常用于验证码或密码。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelOTPInput.gif" width="250" height="200" /></div>
- DelSlider | 滑动型输入器，展示当前值和可选范围。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelSlider.png" width="250" height="200" /></div>
- DelScrollBar | 滚动条是一个交互式栏，用于滚动某个区域或视图到特定位置。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelScrollBar.png" width="250" height="200" /></div>
- DelTimePicker | 输入或选择时间的控件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelTimePicker.png" width="250" height="250" /></div>
- DelDrawer | 屏幕边缘滑出的浮层面板。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelDrawer.png" width="250" height="200" /></div>
- DelCollapse | 可以折叠/展开的内容区域。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelCollapse.png" width="250" height="200" /></div>
- DelAvatar | 用来代表用户或事物，支持图片、图标或字符展示。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelAvatar.png" width="250" height="200" /></div>
- DelCard | 基础的卡片容器，可承载文字、列表、图片、段落，常用于后台概览页面。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelCard.png" width="250" height="200" /></div>
- DelToolTip | 简单的文字提示气泡框(替代基础ToolTip)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelToolTip.png" width="250" height="200" /></div>
- DelPopup | 自带跟随主题切换的背景和阴影(替代基础Popup)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelPopup.png" width="250" height="200" /></div>
- DelSelect | 下拉选择器(替代基础ComboBox)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelSelect.png" width="250" height="200" /></div>
- DelPagination | 分页器，用于分隔长列表，每次只加载一个页面。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelPagination.png" width="250" height="200" /></div>
- DelTimeline | 时间轴，可垂直展示的时间流信息。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelTimeline.png" width="250" height="200" /></div>
- DelTag | 标签，进行标记和分类的小标签。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelTag.png" width="250" height="200" /></div>
- DelTableView | 表格，用于展示行列数据。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelTableView.png" width="250" height="200" /></div>
- DelAutoComplete | 提供输入框自动完成功能。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelAutoComplete.png" width="250" height="200" /></div>
- DelDatePicker | 日期选择框，输入或选择日期的控件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/DelDatePicker.png" width="250" height="200" /></div>
+ HusMoveMouseArea / HusResizeMouseArea | 给任意目标添加[移动/调整大小操作]的鼠标区域 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusResizeMouseArea.gif" width="260" height="190" /></div>
+ HusAsyncHasher | 可对任意数据(url/text/object)生成加密哈希的异步散列器 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusAsyncHasher.png" width="150" height="180" /></div>
+ HusRate | 对某个事物进行评级 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusRate.png" width="240" height="200" /></div>
+ HusSystemThemeHelper | (Qt5/Qt6) 系统主题助手 `[Dark/Light]主题检测 & 感知` | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusSystemThemeHelper.png" width="240" height="110" /></div>
+ HusWatermark | 可给页面的任意项加上水印 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusWatermark.png" width="250" height="140" /></div>
+ HusTour(HusTourFocus/HusTourStep) | 用于分步引导用户了解产品功能的气泡组件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusTour.png" width="250" height="210" /></div>
+ HusButton(HusButton/HusIconButton) | 按钮用于开始一个即时操作。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusButton.png" width="250" height="210" /></div>
+ HusDivider | 用于区隔内容的分割线。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusDivider.png" width="250" height="210" /></div>
+ HusSwitch | 使用开关在两种状态之间切换。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusSwitch.png" width="250" height="210" /></div>
+ HusAcrylic | 亚克力/毛玻璃效果。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusAcrylic.png" width="250" height="210" /></div>
+ HusRectangle | 任意角都可以是圆角的矩形。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusRoundRectangle.gif" width="250" height="210" /></div>
+ HusTabView | 通过选项卡标签切换内容的组件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusTabView.png" width="250" height="210" /></div>
+ HusRadio | 用于在多个备选项中选中单个状态。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusRadio.png" width="250" height="200" /></div>
+ HusRadioBlock | HusRadio 变体，用于在多个备选项中选中单个状态。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusRadioBlock.png" width="250" height="200" /></div>
+ HusCheckBox | 收集用户的多项选择。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusCheckBox.png" width="250" height="200" /></div>
+ HusInput | 通过鼠标或键盘输入内容，是最基础的表单域的包装(即传统输入框)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusInput.png" width="250" height="200" /></div>
+ HusOTPInput | 用于接收和验证一次性口令的输入框组合，通常用于验证码或密码。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusOTPInput.gif" width="250" height="200" /></div>
+ HusSlider | 滑动型输入器，展示当前值和可选范围。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusSlider.png" width="250" height="200" /></div>
+ HusScrollBar | 滚动条是一个交互式栏，用于滚动某个区域或视图到特定位置。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusScrollBar.png" width="250" height="200" /></div>
+ HusTimePicker | 输入或选择时间的控件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusTimePicker.png" width="250" height="250" /></div>
+ HusDrawer | 屏幕边缘滑出的浮层面板。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusDrawer.png" width="250" height="200" /></div>
+ HusCollapse | 可以折叠/展开的内容区域。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusCollapse.png" width="250" height="200" /></div>
+ HusAvatar | 用来代表用户或事物，支持图片、图标或字符展示。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusAvatar.png" width="250" height="200" /></div>
+ HusCard | 基础的卡片容器，可承载文字、列表、图片、段落，常用于后台概览页面。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusCard.png" width="250" height="200" /></div>
+ HusToolTip | 简单的文字提示气泡框(替代基础ToolTip)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusToolTip.png" width="250" height="200" /></div>
+ HusPopup | 自带跟随主题切换的背景和阴影(替代基础Popup)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusPopup.png" width="250" height="200" /></div>
+ HusSelect | 下拉选择器(替代基础ComboBox)。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusSelect.png" width="250" height="200" /></div>
+ HusPagination | 分页器，用于分隔长列表，每次只加载一个页面。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusPagination.png" width="250" height="200" /></div>
+ HusTimeline | 时间轴，可垂直展示的时间流信息。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusTimeline.png" width="250" height="200" /></div>
+ HusTag | 标签，进行标记和分类的小标签。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusTag.png" width="250" height="200" /></div>
+ HusTableView | 表格，用于展示行列数据。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusTableView.png" width="250" height="200" /></div>
+ HusAutoComplete | 提供输入框自动完成功能。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusAutoComplete.png" width="250" height="200" /></div>
+ HusDatePicker | 日期选择框，输入或选择日期的控件。 | `Qt5` `Qt6` | <div align=center><img src="./demonstrate/HusDatePicker.png" width="250" height="200" /></div>
 
 
 ## 许可证
