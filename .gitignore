@@ -13,7 +13,7 @@
 *.so
 *.so.*
 *_pch.h.cpp
-# *_resource.rc
+*_resource.rc
 *.qm
 .#*
 *.*#
@@ -31,9 +31,9 @@ ui_*.h
 qrc_*.cpp
 Thumbs.db
 *.res
-.qmake.cache
-.qmake.stash
-.qtc_clangd/
+*.rc
+/.qmake.cache
+/.qmake.stash
 
 # qtcreator generated files
 *.pro.user*
@@ -71,15 +71,13 @@ CMakeLists.txt.user*
 # --------
 *.dll
 *.exe
-debug/
-release/
 
 # CMake generated files
-/DelegateUI_Qt5/DelegateUI/
 build/
 bin/
-/CustomControls/package
-/DelegateUI_Qt5/package
+/CustomControls/package/
+/HuskarUI_Qt5/package/
+/HuskarUI_Qt5/HuskarUI/
 CMakeCache.txt
 CMakeFiles
 cmake_install.cmake
@@ -87,8 +85,8 @@ install_manifest.txt
 Makefile
 
 # VS Code
-.vscode/
+/.vscode/
 .qmlls.ini
 
 # clang
-.cache/
+/.cache/
